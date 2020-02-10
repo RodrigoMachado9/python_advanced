@@ -1,3 +1,5 @@
+
+# todo, value at the top of the list ( linked list )
 class Node:
     def __init__(self, dataval=None):
         self.dataval = dataval
