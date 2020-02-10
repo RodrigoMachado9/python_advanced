@@ -5,13 +5,15 @@ class Node:
         self.dataval = dataval
         self.nextval = None
 
+# todo ->  sun, mon, tue, wed
 
 class SLinkedList:
-    def init(self):
+
+    def __init__(self):
         self.headval = None
 
     # Print the linked list
-    def listprint(self):
+    def list_print(self):
         printval = self.headval
         while printval is not None:
             print(printval.dataval)
@@ -32,4 +34,4 @@ e3 = Node("Wed")
 list.headval.nextval = e2
 e2.nextval = e3
 list.at_begining("Sun")
-list.listprint()
+list.list_print()
