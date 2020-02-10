@@ -8,14 +8,14 @@ class SLinkedList:
         self.headval = None
 
 # Function to add node
-    def Inbetween(self,middle_node,newdata):
+    def in_between(self,middle_node,newdata):
         if middle_node is None:
             print("The mentioned node is absent")
             return
 
-        NewNode = Node(newdata)
-        NewNode.nextval = middle_node.nextval
-        middle_node.nextval = NewNode
+        new_node = Node(newdata)
+        new_node.nextval = middle_node.nextval
+        middle_node.nextval = new_node
 
 # Print the linked list
     def listprint(self):
@@ -31,5 +31,5 @@ e2 = Node("Tue")
 e3 = Node("Thu")
 list.headval.nextval = e2
 e2.nextval = e3
-list.Inbetween(list.headval.nextval,"Fri")
+list.in_between(list.headval.nextval,"Fri")
 list.listprint()

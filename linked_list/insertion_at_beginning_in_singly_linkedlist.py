@@ -15,12 +15,12 @@ class SLinkedList:
             print(printval.dataval)
             printval = printval.nextval
 
-    def AtBegining(self, newdata):
-        NewNode = Node(newdata)
+    def at_begining(self, newdata):
+        new_node = Node(newdata)
 
         # It Update the new nodes next val to existing node
-        NewNode.nextval = self.headval
-        self.headval = NewNode
+        new_node.nextval = self.headval
+        self.headval = new_node
 
 
 list = SLinkedList()
@@ -29,5 +29,5 @@ e2 = Node("Tue")
 e3 = Node("Wed")
 list.headval.nextval = e2
 e2.nextval = e3
-list.AtBegining("Sun")
+list.at_begining("Sun")
 list.listprint()

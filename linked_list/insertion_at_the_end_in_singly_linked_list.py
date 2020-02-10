@@ -8,15 +8,15 @@ class SLinkedList:
         self.headval = None
 
 # Function to add newnode
-    def AtEnd(self, newdata):
-        NewNode = Node(newdata)
+    def at_end(self, newdata):
+        new_node = Node(newdata)
         if self.headval is None:
-            self.headval = NewNode
+            self.headval = new_node
             return
         laste = self.headval
         while(laste.nextval):
             laste = laste.nextval
-        laste.nextval=NewNode
+        laste.nextval=new_node
 # Print the linked list
     def listprint(self):
         printval = self.headval
@@ -31,5 +31,5 @@ e2 = Node("Tue")
 e3 = Node("Wed")
 list.headval.nextval = e2
 e2.nextval = e3
-list.AtEnd("Thu")
+list.at_end("Thu")
 list.listprint()
