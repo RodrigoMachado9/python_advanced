@@ -13,7 +13,7 @@ class SLinkedList:
         self.headval = None
 
     # Print the linked list
-    def list_print(self):
+    def print_list(self):
         printval = self.headval
         while printval is not None:
             print(printval.dataval)
@@ -34,4 +34,4 @@ e3 = Node("Wed")
 list.headval.nextval = e2
 e2.nextval = e3
 list.at_begining("Sun")
-list.list_print()
+list.print_list()
