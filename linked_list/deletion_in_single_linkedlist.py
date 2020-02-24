@@ -23,7 +23,7 @@ data2 = Node("truck")
 data3 = Node("driver")
 data4 = Node("shipper")
 
-# todo, multiple instances : : beautifull . . . .
+# todo, :: multiple instances :: beautifull .
 x.head.next = data2
 data2.next = data3
 data3.next = data4
