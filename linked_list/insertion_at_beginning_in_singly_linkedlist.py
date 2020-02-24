@@ -26,7 +26,7 @@ class SLinkedList:
         new_node.nextval = self.headval
         self.headval = new_node
 
-
+# todo, amount objects
 list = SLinkedList()
 list.headval = Node("Mon")
 e2 = Node("Tue")
